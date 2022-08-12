@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zn-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="网页什么是网页 网站是指在因特网上根据一定的规则，使用 HTML 等制作的用于展示特定内容相关的网页集合。   网页是网站中的一“页”，通常是 HTML 格式的文件，它要通过浏览器来阅读。  网页的组成：网页是构成网站的基本元素，它通常由图片、链接、文字、声音、视频等元素组成。通常我们看到的网页，常见以 .htm 或 .html 后缀结尾的文件，因此将其俗称为 HTML 文件。  什么是HTML">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2022/08/07/HTML/01-HTML%E7%AE%80%E4%BB%8B/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="网页什么是网页 网站是指在因特网上根据一定的规则，使用 HTML 等制作的用于展示特定内容相关的网页集合。   网页是网站中的一“页”，通常是 HTML 格式的文件，它要通过浏览器来阅读。  网页的组成：网页是构成网站的基本元素，它通常由图片、链接、文字、声音、视频等元素组成。通常我们看到的网页，常见以 .htm 或 .html 后缀结尾的文件，因此将其俗称为 HTML 文件。  什么是HTML">
+<meta property="og:locale" content="zn_CN">
+<meta property="og:image" content="http://example.com/2022/08/07/HTML/01-HTML%E7%AE%80%E4%BB%8B/images/%E7%BD%91%E9%A1%B5%E7%9A%84%E7%BB%84%E6%88%90.png">
+<meta property="og:image" content="http://example.com/2022/08/07/HTML/01-HTML%E7%AE%80%E4%BB%8B/images/%E6%B5%8F%E8%A7%88%E5%99%A8.png">
+<meta property="og:image" content="http://example.com/2022/08/07/HTML/01-HTML%E7%AE%80%E4%BB%8B/images/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8.png">
+<meta property="og:image" content="http://example.com/2022/08/07/HTML/01-HTML%E7%AE%80%E4%BB%8B/images/web%E6%A0%87%E5%87%86.png">
+<meta property="og:image" content="http://example.com/2022/08/07/HTML/01-HTML%E7%AE%80%E4%BB%8B/images/%E5%9B%BE%E7%89%8745.png">
+<meta property="og:image" content="http://example.com/2022/08/07/HTML/01-HTML%E7%AE%80%E4%BB%8B/images/%E9%B8%9F.png">
+<meta property="article:published_time" content="2022-08-07T07:23:17.339Z">
+<meta property="article:modified_time" content="2022-08-12T06:21:10.049Z">
+<meta property="article:author" content="遇见">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/08/07/HTML/01-HTML%E7%AE%80%E4%BB%8B/images/%E7%BD%91%E9%A1%B5%E7%9A%84%E7%BB%84%E6%88%90.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://example.com/2022/08/07/HTML/01-HTML简介/"/>
+
+
+
+
+
+  <title> | Hexo</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zn-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/07/HTML/01-HTML%E7%AE%80%E4%BB%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-08-07T15:23:17+08:00">
+                2022-08-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="网页"><a href="#网页" class="headerlink" title="网页"></a>网页</h2><h4 id="什么是网页"><a href="#什么是网页" class="headerlink" title="什么是网页"></a>什么是网页</h4><ul>
+<li><strong>网站</strong>是指在因特网上根据一定的规则，使用 HTML 等制作的用于展示特定内容相关的网页集合。  </li>
+<li><strong>网页</strong>是网站中的一“页”，通常是 <strong>HTML 格式的文件</strong>，它要通过浏览器来阅读。</li>
+</ul>
+<h4 id="网页的组成："><a href="#网页的组成：" class="headerlink" title="网页的组成："></a>网页的组成：</h4><p><strong>网页是构成网站的基本元素</strong>，它通常由图片、链接、文字、声音、视频等<strong>元素</strong>组成。通常我们看到的网页，常见以 <strong>.htm</strong> 或 <strong>.html</strong> 后缀结尾的文件，因此将其俗称为 <strong>HTML 文件</strong>。</p>
+<p><img src="images/%E7%BD%91%E9%A1%B5%E7%9A%84%E7%BB%84%E6%88%90.png"></p>
+<h4 id="什么是HTML"><a href="#什么是HTML" class="headerlink" title="什么是HTML"></a>什么是HTML</h4><ul>
+<li><strong>HTML</strong> 指的是<strong>超文本标记语言 (Hyper Text Markup Language)</strong> ，它是用来描述网页的一种语言。</li>
+<li>HTML 不是一种编程语言，而是一种标记语言 (markup language)。</li>
+<li>标记语言是一套标记标签 (markup tag)。</li>
+</ul>
+<p>==超文本的两层含义==  </p>
+<ol>
+<li>加入图片、声音、动画、多媒体等内容（超越了文本限制 ）。  </li>
+<li>从一个文件跳转到另一个文件，与世界各地主机的文件连接（超级链接文本 ）。</li>
+</ol>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><ol>
+<li>网页是图片、链接、文字、声音、视频等元素组成, 其实就是一个html文件(后缀名为html)。</li>
+<li>网页生成制作:  有前端人员书写 HTML 文件, 然后浏览器打开,就能看到了网页。</li>
+<li>HTML: 超文本标记语言, 用来制作网页的一门语言. 有标签组成的. 比如 图片标签 链接标签 视频标签等。</li>
+</ol>
+<h2 id="浏览器："><a href="#浏览器：" class="headerlink" title="浏览器："></a>浏览器：</h2><h4 id="常用的浏览器（五大浏览器）"><a href="#常用的浏览器（五大浏览器）" class="headerlink" title="常用的浏览器（五大浏览器）"></a>常用的浏览器（五大浏览器）</h4><ul>
+<li>IE</li>
+<li>火狐</li>
+<li>谷歌</li>
+<li>苹果</li>
+<li>欧朋</li>
+</ul>
+<p>浏览器是网页显示、运行的平台。查看浏览器市场份额：<a target="_blank" rel="noopener" href="http://tongji.baidu.com/data/browser">http://tongji.baidu.com/data/browser</a><br>  <img src="images/%E6%B5%8F%E8%A7%88%E5%99%A8.png"></p>
+<h4 id="浏览器内核（渲染引擎）"><a href="#浏览器内核（渲染引擎）" class="headerlink" title="浏览器内核（渲染引擎）"></a>浏览器内核（渲染引擎）</h4><p>==作用：==<br>读取网页内容，整理讯息，计算网页的显示方式并显示页面</p>
+<p><img src="images/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8.png"></p>
+<p>目前<strong>国内一般浏览器</strong>都会采用 <strong>Webkit/Blink 内核</strong>，如 360、UC、QQ、搜狗等。</p>
+<h2 id="web标准"><a href="#web标准" class="headerlink" title="web标准"></a>web标准</h2><p><strong>Web 标准</strong>是由 W3C 组织和其他标准化组织制定的一系列标准的集合。W3C（万维网联盟）是国际最著名的标准化组织。</p>
+<h4 id="为什么需要Web标准"><a href="#为什么需要Web标准" class="headerlink" title="为什么需要Web标准"></a>为什么需要Web标准</h4><ul>
+<li>浏览器不同，它们显示页面或者排版就有些许差异,遵循 Web 标准除了可以让不同的开发人员写出的页面更标准、更统一。</li>
+</ul>
+<p><img src="images/web%E6%A0%87%E5%87%86.png"></p>
+<ul>
+<li>让 Web 的发展前景更广阔。</li>
+<li>内容能被更广泛的设备访问。</li>
+<li>更容易被搜寻引擎搜索。</li>
+<li>降低网站流量费用。</li>
+<li>使网站更易于维护。</li>
+<li>提高页面浏览速度。</li>
+</ul>
+<h4 id="web标准的构成"><a href="#web标准的构成" class="headerlink" title="web标准的构成"></a>web标准的构成</h4><p>主要包括<strong>结构</strong>、<strong>表现</strong>、<strong>行为</strong>三个方面,其中<strong>结构</strong>最重要。</p>
+<p><img src="images/%E5%9B%BE%E7%89%8745.png"></p>
+<p>Web 标准提出的最佳体验方案：<strong>结构、样式、行为相分离</strong>。<br>简单理解：<strong>结构写到 HTML 文件中， 表现写到 CSS 文件中， 行为写到 JavaScript 文件中</strong></p>
+<p><img src="images/%E9%B8%9F.png"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2022/07/04/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/08/07/HTML/02-HTML%E6%A0%87%E7%AD%BE%E5%AF%BC%E8%AF%BB/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5"><span class="nav-number">1.</span> <span class="nav-text">网页</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%BD%91%E9%A1%B5"><span class="nav-number">1.0.1.</span> <span class="nav-text">什么是网页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E7%9A%84%E7%BB%84%E6%88%90%EF%BC%9A"><span class="nav-number">1.0.2.</span> <span class="nav-text">网页的组成：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFHTML"><span class="nav-number">1.0.3.</span> <span class="nav-text">什么是HTML</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="nav-number">1.0.4.</span> <span class="nav-text">总结：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">浏览器：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%88%E4%BA%94%E5%A4%A7%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%89"><span class="nav-number">2.0.1.</span> <span class="nav-text">常用的浏览器（五大浏览器）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8%EF%BC%88%E6%B8%B2%E6%9F%93%E5%BC%95%E6%93%8E%EF%BC%89"><span class="nav-number">2.0.2.</span> <span class="nav-text">浏览器内核（渲染引擎）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#web%E6%A0%87%E5%87%86"><span class="nav-number">3.</span> <span class="nav-text">web标准</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81Web%E6%A0%87%E5%87%86"><span class="nav-number">3.0.1.</span> <span class="nav-text">为什么需要Web标准</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#web%E6%A0%87%E5%87%86%E7%9A%84%E6%9E%84%E6%88%90"><span class="nav-number">3.0.2.</span> <span class="nav-text">web标准的构成</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">遇见</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

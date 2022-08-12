@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zn-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="背景颜色样式名称：  ​background-color 定义元素的背景颜色  使用方式： 其他说明：  ​元素背景颜色默认值是 transparent（透明）   背景图片样式名称：  ​background-image  定义元素的背景图片  使用方式： 其他说明：  实际开发常见于 logo 或者一些装饰性的小图片或者是超大的背景图片, 优点是非常便于控制位置。(精灵图也是一种运用场景)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="背景颜色样式名称：  ​background-color 定义元素的背景颜色  使用方式： 其他说明：  ​元素背景颜色默认值是 transparent（透明）   背景图片样式名称：  ​background-image  定义元素的背景图片  使用方式： 其他说明：  实际开发常见于 logo 或者一些装饰性的小图片或者是超大的背景图片, 优点是非常便于控制位置。(精灵图也是一种运用场景)">
+<meta property="og:locale" content="zn_CN">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570886137899.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570886176292.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570886322557.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570886362813.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570886648887.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570886688306.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570886973530.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570887034135.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570887652404.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570887699177.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570887809455.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570887978061.png">
+<meta property="og:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570888283511.png">
+<meta property="article:published_time" content="2022-08-12T01:46:21.045Z">
+<meta property="article:modified_time" content="2022-08-12T05:58:40.158Z">
+<meta property="article:author" content="遇见">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/images/1570886137899.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://example.com/2022/08/12/CSS/10-CSS背景/"/>
+
+
+
+
+
+  <title> | Hexo</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zn-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/12/CSS/10-CSS%E8%83%8C%E6%99%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-08-12T09:46:21+08:00">
+                2022-08-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="背景颜色"><a href="#背景颜色" class="headerlink" title="背景颜色"></a>背景颜色</h2><p><strong>样式名称：</strong></p>
+<blockquote>
+<p><strong>​background-color</strong> 定义元素的背景颜色</p>
+</blockquote>
+<p><strong>使用方式：</strong><br><img src="images/1570886137899.png"></p>
+<p><strong>其他说明：</strong></p>
+<blockquote>
+<p>​元素背景颜色<strong>默认值是 transparent</strong>（透明）</p>
+</blockquote>
+<p><img src="images/1570886176292.png"></p>
+<h2 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h2><p><strong>样式名称：</strong></p>
+<blockquote>
+<p>​<strong>background-image</strong>  定义元素的背景图片</p>
+</blockquote>
+<p><strong>使用方式：</strong><br><img src="images/1570886322557.png"><br><img src="images/1570886362813.png"></p>
+<p><strong>其他说明：</strong></p>
+<blockquote>
+<p>实际开发常见于 logo 或者一些装饰性的小图片或者是超大的背景图片, <strong>优点是非常便于控制位置</strong>。(精灵图也是一种运用场景)</p>
+</blockquote>
+<p>==注意==</p>
+<blockquote>
+<p>背景图片<strong>后面的地址不要忘记加 URL</strong>， 同时<strong>里面的路径不要加引号</strong>。</p>
+</blockquote>
+<h2 id="背景平铺"><a href="#背景平铺" class="headerlink" title="背景平铺"></a>背景平铺</h2><p><strong>样式名称：</strong></p>
+<blockquote>
+<p>​background-repeat 设置元素背景图像的平铺 </p>
+</blockquote>
+<p><strong>使用方式：</strong><br><img src="images/1570886648887.png"><br><img src="images/1570886688306.png"><br><strong>其他说明：</strong></p>
+<blockquote>
+<p>背景图像会压住背景颜色</p>
+</blockquote>
+<h2 id="背景图片位置"><a href="#背景图片位置" class="headerlink" title="背景图片位置"></a>背景图片位置</h2><p><strong>样式名称：</strong></p>
+<blockquote>
+<p>background-position 属性可以改变图片在背景中的位置</p>
+</blockquote>
+<p><strong>使用方式：</strong><br><img src="images/1570886973530.png"></p>
+<p>参数代表的意思是：x 坐标和 y 坐标。 可以使用<strong>方位名词</strong>或者<strong>精确单位</strong><br><img src="images/1570887034135.png"></p>
+<p><strong>其他说明：</strong></p>
+<blockquote>
+<ol>
+<li>==参数是<strong>方位名词</strong>==<blockquote>
+<ul>
+<li>如果指定的两个值都是方位名词，则<strong>两个值前后顺序无关</strong>，比如 left  top 和 top  left 效果一致</li>
+<li>如果只指定了一个方位名词，则<strong>省略的那个值默认居中对齐</strong></li>
+</ul>
+</blockquote>
+</li>
+<li>==参数是<strong>精确单位</strong>==<blockquote>
+<ul>
+<li>如果参数值是精确坐标，那么第一个肯定是 x 坐标，第二个一定是 y 坐标</li>
+<li>如果<strong>只指定一个数值</strong>，那该数值一定是 <strong>x 坐标</strong>，另一个默认垂直居中</li>
+</ul>
+</blockquote>
+</li>
+<li>==参数是<strong>混合单位</strong>==<blockquote>
+<ul>
+<li>如果指定的两个值是精确单位和方位名词混合使用，则<strong>第一个值是 x 坐标，第二个值是 y 坐标</strong></li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<h2 id="背景图片固定"><a href="#背景图片固定" class="headerlink" title="背景图片固定"></a>背景图片固定</h2><p><strong>样式名称：</strong></p>
+<blockquote>
+<p>background-attachment 属性设置背景图像是否固定或者随着页面的其余部分滚动。</p>
+</blockquote>
+<p><strong>使用方式：</strong><br>​<img src="images/1570887652404.png"><br><img src="images/1570887699177.png"></p>
+<p><strong>其他说明：</strong></p>
+<blockquote>
+<p>background-attachment 后期可以制作视差滚动的效果。</p>
+</blockquote>
+<h2 id="背景样式合写"><a href="#背景样式合写" class="headerlink" title="背景样式合写"></a>背景样式合写</h2><p><strong>背景合写样式：</strong></p>
+<blockquote>
+<p>background: 背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置;</p>
+</blockquote>
+<p><strong>使用方式：</strong><br><img src="images/1570887809455.png"></p>
+<h2 id="背景色半透明"><a href="#背景色半透明" class="headerlink" title="背景色半透明"></a>背景色半透明</h2><blockquote>
+<p>CSS3 提供了背景颜色半透明的效果。 </p>
+</blockquote>
+<p><strong>使用方式：</strong></p>
+<p><img src="images/1570887978061.png"></p>
+<ul>
+<li>最后一个参数是 alpha 透明度，取值范围在 0~1之间</li>
+<li>我们习惯把 0.3 的 0 省略掉，写为 background: rgba(0, 0, 0, .3);</li>
+</ul>
+<p>==注意==</p>
+<blockquote>
+<p>背景半透明是指盒子背景半透明，盒子里面的内容不受影响</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="images/1570888283511.png"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2022/08/11/CSS/09-CSS%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/08/12/CSS/11-CSS%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2"><span class="nav-number">1.</span> <span class="nav-text">背景颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="nav-number">2.</span> <span class="nav-text">背景图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E5%B9%B3%E9%93%BA"><span class="nav-number">3.</span> <span class="nav-text">背景平铺</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BD%8D%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">背景图片位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E5%9B%BA%E5%AE%9A"><span class="nav-number">5.</span> <span class="nav-text">背景图片固定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E6%A0%B7%E5%BC%8F%E5%90%88%E5%86%99"><span class="nav-number">6.</span> <span class="nav-text">背景样式合写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E8%89%B2%E5%8D%8A%E9%80%8F%E6%98%8E"><span class="nav-number">7.</span> <span class="nav-text">背景色半透明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">8.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">遇见</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
